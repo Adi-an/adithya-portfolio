@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adithya Nadig | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #f4f6f8; color: #333; line-height: 1.6; }
+    header { background: #0a2540; color: #fff; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 2.5rem; }
+    header p { font-size: 1.1rem; margin-top: 10px; }
+    section { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+    h2 { color: #0a2540; margin-bottom: 15px; border-bottom: 2px solid #0a2540; display: inline-block; }
+    .about, .skills, .projects, .education, .contact { margin-bottom: 40px; }
+    .skills-list, .project-card { background: #fff; padding: 20px; border-radius: 8px; margin-top: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+    .skills-list ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+    .skills-list li { background: #eef2f7; padding: 10px; border-radius: 5px; }
+    .project-card h3 { margin-bottom: 8px; }
+    .project-card p { margin-bottom: 6px; }
+    footer { background: #0a2540; color: #fff; text-align: center; padding: 20px; }
+    a { color: #0a2540; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Adithya Nadig</h1>
+    <p>Final-Year ISE Student | Aspiring Software Engineer | AI & Networking Enthusiast</p>
+  </header>
+
+  <!-- About Me -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a final-year Information Science and Engineering student with a strong foundation in software development,
+      computer networking, and problem-solving. I am passionate about building real-world applications and exploring
+      AI-driven solutions that improve user experience. My career goal is to grow as a software and cybersecurity professional and
+      contribute to impactful technology-driven organizations.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <ul>
+        <li><strong>Programming:</strong> C, Java, Python</li>
+        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Networking:</strong> OSI Model, TCP/IP, Routing Basics</li>
+        <li><strong>Databases:</strong> MySQL (Basics)</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
+        <li><strong>Soft Skills:</strong> Communication, Teamwork, Problem-Solving</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Emotion-Smart rank based college predictor</h3>
+      <p><strong>Technologies:</strong> Python, Sicketlearn, Random Forest classifier</p>
+      <p>
+        A "Smart Rank" based admission predictor is a machine learning project that uses historical admission data to help students estimate their likelihood of getting colle
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Networking Fundamentals Simulation</h3>
+      <p><strong>Technologies:</strong> Cisco Packet Tracer</p>
+      <p>
+        Designed and simulated basic LAN and WAN topologies to understand routing, switching, and IP addressing concepts.
+        This project strengthened my understanding of real-world network infrastructure.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Education -->
+  <section class="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Engineering (B.E)</strong></p>
+    <p>Information Science and Engineering</p>
+    <p>Final Year | 2026 Pass Out</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: adithyanadig7@gmail.com</p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/adithyanadig</a></p>
+    <p>GitHub: <a href="#">github.com/adithyanadig</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Adithya Nadig | Portfolio</p>
+  </footer>
+
+</body>
+</html>
