@@ -1,134 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adithya Nadig | Portfolio</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { background: #f4f6f8; color: #333; line-height: 1.6; }
-    header { background: #0a2540; color: #fff; padding: 40px 20px; text-align: center; }
-    header h1 { font-size: 2.5rem; }
-    header p { font-size: 1.1rem; margin-top: 10px; }
-    header img { width: 150px; height: 150px; border-radius: 50%; margin-top: 20px; object-fit: cover; }
-    section { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #0a2540; margin-bottom: 15px; border-bottom: 2px solid #0a2540; display: inline-block; }
-    .about, .skills, .projects, .education, .contact { margin-bottom: 40px; }
-    .skills-list, .project-card { background: #fff; padding: 20px; border-radius: 8px; margin-top: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
-    .skills-list ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-    .skills-list li { background: #eef2f7; padding: 10px; border-radius: 5px; }
-    .project-card h3 { margin-bottom: 8px; }
-    .project-card p { margin-bottom: 6px; }
-    footer { background: #0a2540; color: #fff; text-align: center; padding: 20px; }
-    a { color: #0a2540; text-decoration: none; font-weight: bold; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adithya Nadig | Portfolio</title>
+
+    <meta name="description"
+          content="Adithya Nadig - Information Science Engineer, Python Full Stack Developer, Data Analytics and Networking enthusiast.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Adithya A N</h1>
-    <p>Full-Stack Builder | Python  | Networking </p>
-    <img src="profile.jpeg" alt="Adithya Nadig Photo" />
-  </header>
+    <!-- ================= NAVBAR ================= -->
 
-  <!-- About Me -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I am a Information Science and Engineering Graduate with a strong foundation in software development,
-      computer networking, and problem-solving. I am passionate about building real-world applications and exploring
-      AI-driven solutions that improve user experience. My career goal is to grow as a software professional and
-      contribute to impactful technology-driven organizations.
-    </p>
-  </section>
+    <header class="navbar">
+        <div class="nav-container">
 
-  <!-- Skills -->
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="skills-list">
-      <ul>
-        <li><strong>Programming:</strong> C, Java, Python</li>
-        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
-        <li><strong>Networking:</strong> OSI Model, TCP/IP, Routing Basics</li>
-        <li><strong>Databases:</strong> SQL  Mangodb (Basics)</li>
-        <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
-        <li><strong>Soft Skills:</strong> Communication, Teamwork, Adaptability, Problem Solving</li>
-      </ul>
-    </div>
-  </section>
+            <a href="#home" class="logo">Adithya<span>.</span></a>
 
-  <!-- Projects -->
-  <section class="projects">
-    <h2>Projects</h2>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-    <div class="project-card">
-      <h3>Admission Assistant – A Smart Rank Based Predictor</h3>
-      <p><strong>Technologies:</strong> Python, Scikit-learn, Random Forest Classifier</p>
-      <p>
-        A machine learning project that uses historical admission data to help students estimate their likelihood of getting college admission based on rank and preferences.
-      </p>
-    </div>
+        </div>
+    </header>
 
-    <div class="project-card">
-      <h3>Networking Fundamentals Simulation</h3>
-      <p><strong>Technologies:</strong> Cisco Packet Tracer</p>
-      <p>
-        Designed and simulated basic LAN and WAN topologies to understand routing, switching, and IP addressing concepts.
-        This project strengthened my understanding of real-world network infrastructure.
-      </p>
-    </div>
-    <div class="project-card">
-      
-  <h3>Record Management Application</h3>
-  <p><strong>Technologies:</strong> Python, Django, HTML, CSS, JavaScript, PostgreSQL</p>
-  <p>
-    Developed a Record Management Application to efficiently manage and organize records.
-    Implemented features for adding, updating, deleting, and searching records through a user-friendly interface.
-    Used Django for the backend, Postgresql for database management, and HTML, CSS, and JavaScript for the frontend.
-  </p>
-</div>
-    <div class="project-card">
-  <h3>DriveIndia – Car Rental Management System</h3>
-  <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Node.js, Express.js, MySQL</p>
-  <p>
-    Built a full-stack Car Rental Management System with user authentication, vehicle
-    browsing, online booking, and booking management features. Developed REST APIs
-    using Express.js, integrated MySQL for data storage, and created separate user and
-    admin dashboards for managing cars, customers, and rental requests.
-  </p>
-</div>
 
-  </section>
+    <!-- ================= HOME ================= -->
 
-  <!-- Education -->
-  <section class="education">
-    <h2>Education</h2>
-    <p><strong>Bachelor of Engineering (B.E)</strong></p>
-    <p>Information Science and Engineering</p>
-    <p>Bapuji Institute of Engineering and Technology, Davangere</p>
-    <p>Graduate | 2026 Pass Out</p>
-  </section>
+    <section id="home" class="hero">
 
-    <section class="experience">
-    <h2>Experience</h2>
-    <p><strong>Data Analyst Intern</strong></p>
-    <p>Inventron Technologies, Bengaluru</p>
-    
-  </section>
+        <div class="hero-container">
 
-  <!-- Contact -->
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: adithyanadig7@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/adithyanadig" target="_blank">linkedin.com/in/adithyanadig</a></p>
-    <p>GitHub: <a href="https://github.com/Adi-an" target="_blank">github.com/adithyanadig</a></p>
-  </section>
+            <div class="hero-text">
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Adithya A N | Portfolio</p>
-  </footer>
+                <p class="hello">Hello, I'm</p>
+
+                <h1>Adithya Nadig</h1>
+
+                <h2>Python Full Stack Developer | Data Analytics | Networking</h2>
+
+                <p class="hero-description">
+                    Information Science and Engineering graduate interested in
+                    building practical software applications, data-driven solutions,
+                    and technology systems.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary-btn">
+                        View My Projects
+                    </a>
+
+                    <a href="Adithya_Nadig_Resume.pdf"
+                       class="btn secondary-btn"
+                       download>
+                        Download Resume
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/Adi-an"
+                       target="_blank">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/adithyanadig"
+                       target="_blank">
+                        LinkedIn
+                    </a>
+
+                    <a href="mailto:adithyanadig7@gmail.com">
+                        Email
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img src="profile.jpeg"
+                     alt="Adithya Nadig">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <p class="section-label">ABOUT ME</p>
+
+            <h2 class="section-title">Who I Am</h2>
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>
+                        I am an Information Science and Engineering graduate
+                        with a strong foundation in Python, SQL, web development,
+                        databases, networking, and data analytics.
+                    </p>
+
+                    <p>
+                        I enjoy building practical applications and solving
+                        real-world problems using software and data. My interests
+                        include Python full-stack development, data analytics,
+                        machine learning, databases, networking, and cloud
+                        technologies.
+                    </p>
+
+                    <p>
+                        I am currently focused on developing industry-relevant
+                        technical skills and building projects that demonstrate
+                        practical problem-solving ability.
+                    </p>
+
+                </div>
+
+                <div class="about-details">
+
+                    <div class="detail-box">
+                        <h3>Education</h3>
+                        <p>B.E. Information Science & Engineering</p>
+                        <p>BIET, Davangere</p>
+                        <p>2022 – 2026</p>
+                    </div>
+
+                    <div class="detail-box">
+                        <h3>Interests</h3>
+                        <p>Python Development</p>
+                        <p>Data Analytics</p>
+                        <p>Networking & Cloud</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section skills-section">
+
+        <div class="container">
+
+            <p class="section-label">MY SKILLS</p>
+
+            <h2 class="section-title">Technical Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon">PY</div>
+                    <h3>Programming</h3>
+                    <p>Python, C, C++, JavaScript</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">WEB</div>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript, Bootstrap</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">DB</div>
+                    <h3>Databases</h3>
+                    <p>SQL, MySQL, PostgreSQL, MongoDB Basics</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">DS</div>
+                    <h3>Data & ML</h3>
+                    <p>NumPy, Pandas, Matplotlib, Scikit-learn</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">NET</div>
+                    <h3>Networking</h3>
+                    <p>OSI Model, TCP/IP, Routing, Switching</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">DEV</div>
+                    <h3>Tools</h3>
+                    <p>Git, GitHub, VS Code, Cisco Packet Tracer</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <p class="section-label">MY WORK</p>
+
+            <h2 class="section-title">Projects</h2>
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <div class="project-card">
+
+                    <div class="project-number">01</div>
+
+                    <h3>
+                        Admission Assistant
+                    </h3>
+
+                    <p class="project-subtitle">
+                        A Smart Rank-Based Predictor
+                    </p>
+
+                    <p>
+                        Developed a machine learning application that uses
+                        historical admission data to predict suitable college
+                        options based on rank, category, course and location.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Random Forest</span>
+                        <span>Streamlit</span>
+                    </div>
+
+                    <a href="https://github.com/Adi-an"
+                       target="_blank"
+                       class="project-link">
+                        View on GitHub →
+                    </a>
+
+                </div>
+
+
+                <!-- PROJECT 2 -->
+
+                <div class="project-card">
+
+                    <div class="project-number">02</div>
+
+                    <h3>
+                        DriveIndia
+                    </h3>
+
+                    <p class="project-subtitle">
+                        Car Rental Management System
+                    </p>
+
+                    <p>
+                        Built a full-stack car rental application with
+                        authentication, vehicle browsing, booking management,
+                        REST APIs and separate user and admin functionality.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MySQL</span>
+                    </div>
+
+                    <a href="https://github.com/Adi-an"
+                       target="_blank"
+                       class="project-link">
+                        View on GitHub →
+                    </a>
+
+                </div>
+
+
+                <!-- PROJECT 3 -->
+
+                <div class="project-card">
+
+                    <div class="project-number">03</div>
+
+                    <h3>
+                        Record Management Application
+                    </h3>
+
+                    <p class="project-subtitle">
+                        Full Stack CRUD Application
+                    </p>
+
+                    <p>
+                        Developed a record management system with functionality
+                        to add, update, delete, search and manage records through
+                        a web interface.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="https://github.com/Adi-an"
+                       target="_blank"
+                       class="project-link">
+                        View on GitHub →
+                    </a>
+
+                </div>
+
+
+                <!-- PROJECT 4 -->
+
+                <div class="project-card">
+
+                    <div class="project-number">04</div>
+
+                    <h3>
+                        Networking Fundamentals
+                    </h3>
+
+                    <p class="project-subtitle">
+                        LAN / WAN Network Simulation
+                    </p>
+
+                    <p>
+                        Designed and simulated LAN and WAN network topologies
+                        using Cisco Packet Tracer to understand IP addressing,
+                        routing, switching and network communication.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>Cisco Packet Tracer</span>
+                        <span>TCP/IP</span>
+                        <span>Routing</span>
+                        <span>Switching</span>
+                    </div>
+
+                    <a href="https://github.com/Adi-an"
+                       target="_blank"
+                       class="project-link">
+                        View on GitHub →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience" class="section experience-section">
+
+        <div class="container">
+
+            <p class="section-label">EXPERIENCE</p>
+
+            <h2 class="section-title">Internship</h2>
+
+            <div class="experience-card">
+
+                <div class="experience-header">
+
+                    <div>
+                        <h3>Data Analyst Intern</h3>
+                        <p class="company">
+                            Inventeron Technologies
+                        </p>
+                    </div>
+
+                    <span class="experience-date">
+                        2026
+                    </span>
+
+                </div>
+
+                <p>
+                    Completed a 90-day Data Analyst internship involving
+                    Python, NumPy, Pandas, SQL, Excel data cleaning,
+                    Power Query, dashboards and machine learning concepts.
+                </p>
+
+                <div class="tech-list">
+                    <span>Python</span>
+                    <span>NumPy</span>
+                    <span>Pandas</span>
+                    <span>SQL</span>
+                    <span>Excel</span>
+                    <span>Machine Learning</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section contact-section">
+
+        <div class="container">
+
+            <p class="section-label">CONTACT</p>
+
+            <h2 class="section-title">Let's Connect</h2>
+
+            <p class="contact-description">
+                I am open to entry-level opportunities in software development,
+                Python full-stack development, data analytics, databases,
+                networking and related technical roles.
+            </p>
+
+            <div class="contact-grid">
+
+                <a href="mailto:adithyanadig7@gmail.com"
+                   class="contact-card">
+
+                    <h3>Email</h3>
+                    <p>adithyanadig7@gmail.com</p>
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/adithyanadig"
+                   target="_blank"
+                   class="contact-card">
+
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/adithyanadig</p>
+
+                </a>
+
+
+                <a href="https://github.com/Adi-an"
+                   target="_blank"
+                   class="contact-card">
+
+                    <h3>GitHub</h3>
+                    <p>github.com/Adi-an</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Adithya Nadig. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener("click", function(e) {
+
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute("href"))
+                    .scrollIntoView({
+                        behavior: "smooth"
+                    });
+
+            });
+
+        });
+
+    </script>
 
 </body>
 </html>
