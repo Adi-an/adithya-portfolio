@@ -46,12 +46,11 @@ a {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    min-height: 70px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    min-height: 70px;
 }
 
 .logo {
@@ -68,14 +67,13 @@ a {
     list-style: none;
 
     display: flex;
-    gap: 28px;
+    gap: 25px;
 }
 
 .nav-links a {
     color: #374151;
     font-size: 15px;
     font-weight: 600;
-
     transition: 0.3s;
 }
 
@@ -92,12 +90,11 @@ a {
     display: flex;
     align-items: center;
 
-    background:
-        linear-gradient(
-            135deg,
-            #f8fbff,
-            #eef4ff
-        );
+    background: linear-gradient(
+        135deg,
+        #f8fbff,
+        #eef4ff
+    );
 }
 
 .hero-container {
@@ -140,7 +137,6 @@ a {
 
 .hero-description {
     margin-top: 20px;
-
     max-width: 650px;
 
     color: #6b7280;
@@ -152,7 +148,6 @@ a {
 
     display: flex;
     gap: 15px;
-
     flex-wrap: wrap;
 }
 
@@ -193,7 +188,6 @@ a {
 .social-links {
     display: flex;
     gap: 20px;
-
     margin-top: 25px;
 }
 
@@ -575,6 +569,28 @@ a {
 }
 
 
+/* ================= CERTIFICATES ================= */
+
+#certificates {
+    background: #eef4ff;
+}
+
+#certificates .project-card {
+    min-height: 230px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#certificates .project-link {
+    margin-top: auto;
+}
+
+#certificates .project-card > p {
+    margin-top: 10px;
+}
+
+
 /* ================= FOOTER ================= */
 
 footer {
@@ -628,7 +644,6 @@ footer p {
     .contact-grid {
         grid-template-columns: 1fr;
     }
-
 }
 
 
@@ -685,4 +700,7 @@ footer p {
         gap: 10px;
     }
 
+    .project-card {
+        padding: 25px;
+    }
 }
